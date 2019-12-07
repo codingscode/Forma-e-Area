@@ -14,17 +14,17 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
 		
-		List<Forma> lista = new ArrayList<>();
+	List<Forma> lista = new ArrayList<>();
 		
-		System.out.println("Digite o número de formas : ");
-		int n = sc.nextInt();
+	System.out.println("Digite o nÃºmero de formas : ");
+	int n = sc.nextInt();
 		
-		for (int i=1;i<=n;i++) {
-		  System.out.println("Forma #" + i + " informação : ");
-		  System.out.println("Retangulo ou Circulo (r/c) ? : ");
+	for (int i=1;i<=n;i++) {
+	  System.out.println("Forma #" + i + " informaÃ§Ã£o : ");
+	  System.out.println("Retangulo ou Circulo (r/c) ? : ");
           char formato = sc.next().charAt(0);	
           System.out.println("Cor (VERDE/VERMELHO/AZUL/LARANJA): ");
           Cor cor = Cor.valueOf(sc.next());
@@ -43,11 +43,11 @@ public class Programa {
           
 		}
 		
-		System.out.println();
-		System.out.println("Área das Formas : ");
-		for (Forma forma : lista) {
-		  System.out.println(String.format("%.2f", forma.area()));
-		}
+	System.out.println();
+	System.out.println("Ãrea das Formas : ");
+	for (Forma forma : lista) {
+	  System.out.println(String.format("%.2f", forma.area()));
+	}
 		
         sc.close();
 	}
